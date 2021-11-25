@@ -1,0 +1,43 @@
+body{
+    background-color: aqua;
+}
+
+.nav-bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:beige; 
+    position:fixed;
+    top:0;
+    width: 100%;
+      
+}
+.nav-bar li{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+
+}
+.nav-bar li:hover{
+    background-color: red;
+}
+
+.row{
+    margin-top: 30px;
+}
+.column{
+    float: left;
+}
+.column.side{
+    width:25%;
+}
+.column.middle{
+    width: 75%;
+}
+img{
+    width: 50%;
+    height: auto;
+    
+}
