@@ -23,7 +23,7 @@
         </div>
         <div class="column side">
             <h2>Side</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum debitis ipsa autem aliquid, inventore deleniti in fugit rerum perspiciatis blanditiis corrupti illo! Tempore eligendi quia amet tempora consectetur neque modi.</p>
+            <p> Hello, welcome to my page , you will find who i am , where i come from and what i do for a living . I hope you enjoy your stay in this webpage i build. </p>
             <img src="files/pic1.jpg" alt="">
         </div>
      </div>
