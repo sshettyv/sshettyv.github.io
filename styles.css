@@ -36,8 +36,8 @@ body{
 .column.middle{
     width: 75%;
 }
-img{
-    width: 50%;
-    height: auto;
-    
-}
+ 
+ img{
+     width:auto;
+     height:20%;
+ }
