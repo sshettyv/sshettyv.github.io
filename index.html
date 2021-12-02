@@ -3,35 +3,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script>
-    <title>Vijeth C Shetty | Designer | Chef</title>
+    <title>Vijeth C Shetty </title>
 </head>
 <body>
-    <div>
-        <ul class="nav-bar">
-            <li>Home</li>
-            <li>Contact</li>
-            <li>About</li>
+   <header id="home">
+       <h1>Vijeth Shetty</h1>
+    </header> 
+   <nav class="main-nav">
+       <ul>
+           <li> <a href="#home">Home</a> </li>
+           <li> <a href="#skills">Skills</a></li>
+           <li> <a href="#gallery">Image Gallery</a> </li>
+           <li onclick="window.open('https://github.com/sshettyv')"></a>Contact Info</li>
+           
         </ul>
-    </div>
-    <div class = "row">
-         
-        <div class="column middle">
-            <h2>Main</h2>
-            <p>Hi, I moved to Tampere in 2013 to study in Tampere University of Technology. I graduated as a Master in Automation Engineering in 2017. As i wished to study Finnish , I joined Tredu's language course for Immigrants. I finished the first part of the course in 6 months and then joined Catering school as I had experience working in an Indian kitchen for two years during my university studies and I had a passion for cooking . I graduated from vocational school in 2020 during which I worked as a gig worker for Barona, where I had the opportunity to work in different restaurants in Tampere region . After I graduated from Tredu as a Chef, I joined Spartao Oy where I had the opportunity to learn to Sushi chef and Wok chef . After realising that I wish to have a more challenging work place and wishing to use my Engineering degree, I left my job and currently looking for new opportunities in the field of engineering and web development. I have been polishing my skills when it comes programming languages like Javascript,Html and CSS. </p>
+   </nav>
+   
+   <section class ="row">
+        <div class="column">
+            <img class="myPic"  src="files/pic1.jpg" alt="my image">
         </div>
-        <div class="column side">
-            <h2>Side</h2>
-            <p> Hello, welcome to my page , you will find who i am , where i come from and what i do for a living . I hope you enjoy your stay in this webpage i build. </p>
-            <img src="files/pic1.jpg" alt="">
-        </div>
-     </div>
-     <!-- Image Gallery -->
-    
+        <div  class="bio column">
+                <h2>About me</h2>
+            <ul>
+                <li><i class="bi bi-mortarboard-fill"></i>
+                    2013 Graduated from NIE in India and  moved to Finland and joined Tampere University of Technology</li>
+                <li><i class="bi bi-egg-fried"></i>2015 Joined first restaurant job as Kitchen assistant</li>
+                <li><i class="bi bi-mortarboard-fill"></i>
+                    2017 Graduated from TTY and joined Tredu to learn Finnish </li>
+                <li><i class="bi bi-hand-thumbs-up"></i>2018 Joined Chef school at Tredu and worked as a kitchen gig worker around Tampere area</li>
+                <li><i class="bi bi-mortarboard-fill"></i>
+                    2020 Graduated from Tredu as a Chef</li>
+                <li><i class="bi bi-person-check"></i>2020 Joined Spartao Oy as a Sushi/Wok chef for Itsudemo and FireWok</li>
+                <li><i class="bi bi-code-square"></i></i>2021 Left Spartao Oy to pursue a carryer in Engineering field</li>
+            </ul>
+                <h2>Work Traits</h2>
+            <ul>
+                    <li><i class="bi bi-activity"></i>work at high stress environment.</li>
+                    <li><i class="bi bi-arrow-repeat"></i>open to constructive feedback.</li>
+                    <li><i class="bi bi-hourglass-split"></i>stick to strict deadlines and prioritize accordingly</li>
+                    <li><i class="bi bi-trash"></i>maintain a clean work atmosphere</li>
+                    <li><i class="bi bi-bandaid"></i>accept imperfection at work and work alongside it</li>
+                </ul>
+            </div>
+    </section>
 
+    <section id = "skills" class = "softSkills">
+        <div class="column">
+        <h2>Language  Skills </h2>
+            <ul>
+                <li>Finnish(A 2.2)</li>
+                <li>English</li>
+                <li>Tulu</li>
+                <li>Hindi</li>
+                <li>Kannada</li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>   
+            <h2>Software Skills </h2>   
+                <li>Vanilla Java Script</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C#</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+    </section>
+   
+       
+  
+   <div class="container">
+       <h1>Image Gallery</h1>
+        <div id="gallery" ></div>
+   </div>
+   <div id="popup">
+       <img src="" alt="" id="selectedImage">
+   </div>
+
+  
+    <footer>
+        <button id="githubLink"><i class="bi bi-github" ></i>Go to Github Repo</button>
+    </footer>
  
-    
-    
 </body>
+<script src="app.js"></script>
+
 </html>

@@ -1,32 +1,32 @@
- const filenames = [
-     'files/img1.jpg',
-     'files/img2.jpg',
-     'files/img3.jpg',
-     'files/img4.jpg',
-     'files/img5.jpg',
-     'files/img6.jpg',
-     'files/img7.jpg',
-     'files/img8.jpg',
-     'files/img9.jpg'
- ];
+ const gallery = document.getElementById('gallery');
+ const popup = document.getElementById('popup');
+ const selectedImage = document.getElementById('selectedImage');
+ const imageIndexes= [1,2,3,4,5,6,7,8,9];
+ const selectedIndex = null;
 
- fetchImage(filenames).catch(err => console.log(err));
+ imageIndexes.forEach((i) => {
+    const image = document.createElement('img');
+    image.src = `/files/img${i}.jpg`;
+    image.alt = `food image {i}`;
+    image.classList.add('galleryImg');
+    image.addEventListener('click',()=>{
+        popup.style.transform = 'translateY(0)';
+        selectedImage.src = `/files/img${i}.jpg`;
+        selectedImage.alt = `food image {i}`;
+    });
+    gallery.append(image);
+     
 
- async function fetchImage(filenames){
-    for(let filename of filenames){
-        const response = await fetch(filename);
-        const blob = await response.blob();
-        const img = document.createElement('img');
-        img.src = URL.createObjectURL(blob);
-    
-         
-        document.body.append(img);
-        console.log('hello')
-      
-         
+ })
 
-    }
+ popup.addEventListener('click',()=>{
+    popup.style.transform = 'translateY(-100%)';
+    popup.src = '' ;
+    popup.alt='';
 
+ })
 
-
+ document.getElementById('githubLink').onclick = function(){
+   window.open('https://github.com/sshettyv');
+   
  }
