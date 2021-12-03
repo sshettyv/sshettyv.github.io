@@ -1,10 +1,11 @@
 
 body{
-  background-image: #88BDBC;
+  background-color: #88BDBC; /*#88BDBC*/
   font-family: 'Roboto Mono', monospace;
+  color: rgb(0, 0, 0);
 }
 header{
-    background-color:#a4ebe8;
+    background-color:#a4ebe8;/*#a4ebe8*/
     padding: 20px 0;
     text-align: center;
     position: relative;
@@ -14,7 +15,7 @@ header{
     z-index: 1;
   }
   header h1{
-    color:#112D32;
+    color:#112D32;   /*#112D32*/
     
     display: inline-block;
     padding: 6px 12px;
@@ -23,7 +24,7 @@ header{
   }
 
 nav{
-    background: #6E6658;
+    background: #6E6658;  /*#6E6658*/
     padding: 20px;
     position: sticky;
     top: 0;
@@ -38,6 +39,7 @@ nav{
   }
   nav li{
     width: 25%;
+     
     display: inline-block;
     font-size: 30px;
   }
@@ -45,8 +47,10 @@ nav{
     text-decoration: none;
     color: #000000;
   }
-  nav li:hover{
+  nav li a:hover{
     text-decoration: underline;
+    font-weight: 600;  
+    pointer-events: fill;
   }
 
   .column .myPic{
