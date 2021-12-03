@@ -98,6 +98,7 @@ nav{
   }
   .softSkills h2{
     font-size: 40px;
+    
   } 
   
 
@@ -173,4 +174,9 @@ footer{
 
  
 
+.notice {
+  display: none;
+  visibility: hidden;
+}
 
+ 
