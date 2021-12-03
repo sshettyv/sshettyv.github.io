@@ -1,9 +1,10 @@
 
 body{
-  background-image: linear-gradient(rgba(230, 140, 5, 0.336), rgb(135, 226, 17));
+  background-image: #88BDBC;
+  font-family: 'Roboto Mono', monospace;
 }
 header{
-    background-color: #00b3d3;
+    background-color:#a4ebe8;
     padding: 20px 0;
     text-align: center;
     position: relative;
@@ -13,16 +14,16 @@ header{
     z-index: 1;
   }
   header h1{
-    color: rgb(8, 8, 8);
+    color:#112D32;
     
     display: inline-block;
     padding: 6px 12px;
     
-    font-family: fantasy;
+     
   }
 
 nav{
-    background: #ee4a4a;
+    background: #6E6658;
     padding: 20px;
     position: sticky;
     top: 0;
@@ -48,13 +49,14 @@ nav{
     text-decoration: underline;
   }
 
-   
-  .column{
+  .column .myPic{
     float:left;
-    width:50%;
+    width:25%;
+    padding-right: 50px;
     
     }
-
+  
+  
   .row:after{
       content:"";
       display: table;
@@ -76,12 +78,14 @@ nav{
     text-align: left;
     font-size: 40px;
   }
+  .softSkills .column{
+    float:left;
+    width: 33.33%;
+  }
   .softSkills{
     padding-top: 100px;
-    
+    padding-left: 100px;
    
-
-    
   }
   .softSkills li{
     font-size: 25px;
