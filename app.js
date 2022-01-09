@@ -53,7 +53,7 @@
 function unResponsive(){
       console.log(screen.width)
             if(screen.width <1200){
-              window.location.replace("files/error404.html");;
+              window.location.replace("mobilePage.html");;
             }
 
 }

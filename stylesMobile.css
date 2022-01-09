@@ -1,0 +1,14 @@
+body{
+  background-color: #88BDBC; /*#88BDBC*/
+  font-family: 'Roboto Mono', monospace;
+  color: rgb(0, 0, 0);
+}
+section  {
+  float:left;
+  padding-right: 50px;
+  
+  }
+
+footer button{
+  color: black;
+}
