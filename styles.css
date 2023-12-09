@@ -54,7 +54,7 @@ nav{
   }
 
   .column .myPic{
-    float:left;
+    float:right;
     width:25%;
     height:auto;
     padding-right: 50px;
