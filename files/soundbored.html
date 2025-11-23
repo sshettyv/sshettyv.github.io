@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sound Buttons</title>
+
+    <style>
+        .sound-button {
+            padding: 15px 25px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .sound-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Sound Buttons</h1>
+
+    <!-- Buttons -->
+    <button class="sound-button" onclick="playRandomFarceSound()"">Dont Press</button>
+    <audio id="player"></audio>
+	 <button class="sound-button" onclick="playSound('noni/ok.mp3')"">Ok</button>
+    <audio id="player"></audio>
+    <button class="sound-button" onclick="playSound('noni/aha.mp3')">Aha</button>
+    <button class="sound-button" onclick="playSound('noni/well.mp3')">Well</button>
+    <button class="sound-button" onclick="playSound('noni/welp.mp3')">Welp</button>
+    <button class="sound-button" onclick="playSound('randoms/bruh.mp3')">Bruh</button>
+    <button class="sound-button" onclick="playSound('randoms/comedypolice.mp3')">Comedypolice</button>
+   <button class="sound-button" onclick="playSound('randoms/faaah.mp3')">fAak</button>
+    <button class="sound-button" onclick="playSound('randoms/noob.mp3')">Newb</button>
+    <button class="sound-button" onclick="playSound('randoms/takeoff.mp3')">takeoff</button>
+   
+   
+    <script>
+        const farcesounds = [
+            "farce/farce (1).mp3",
+            "farce/farce (2).mp3",
+			"farce/farce (3).mp3",
+"farce/farce (4).mp3",
+"farce/farce (5).mp3",
+"farce/farce (6).mp3",
+"farce/farce (7).mp3",
+"farce/farce (8).mp3",
+"farce/farce (9).mp3",
+"farce/farce (10).mp3",
+"farce/farce (11).mp3",
+"farce/farce (12).mp3",
+"farce/farce (13).mp3",
+"farce/farce (14).mp3"
+        ];
+    function playRandomFarceSound() {
+            const player = document.getElementById("player");
+
+            // pick a random sound
+            const randomfarceSound = farcesounds[Math.floor(Math.random() * farcesounds.length)];
+
+            player.src = randomfarceSound;
+            player.currentTime = 0;
+            player.play();
+        }
+		function playSound(src) {
+    const audio = new Audio(src); // create new Audio object
+    audio.play();                 // play the sound
+}
+		  
+    </script>
+
+</body>
+</html>
